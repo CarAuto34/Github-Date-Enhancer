@@ -1,5 +1,7 @@
 # GitHub Date Enhancer
 
+[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://app.codspeed.io/CarAuto34/Github-Date-Enhancer?utm_source=badge)
+
 Shows exact creation and commit dates alongside relative times on GitHub.
 
 ## Features
@@ -19,6 +21,14 @@ The extension scans GitHub pages for relative time elements and adds the corresp
 ### Chrome
 - Download the latest release ZIP from the [releases page](https://github.com/myst-25/github-date-enhancer/releases).
 - Go to `chrome://extensions/`, enable Developer Mode, click "Load unpacked", and select the extension folder.
+
+## Benchmarks
+Performance benchmarks for the content scripts live in `bench/` and use [Vitest](https://vitest.dev) with the [CodSpeed](https://codspeed.io) plugin. Run them locally with:
+
+```sh
+npm install
+npm run bench
+```
 
 ## Permissions
 - Requires access to github.com pages to display the enhanced dates.
